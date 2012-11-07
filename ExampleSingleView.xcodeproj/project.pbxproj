@@ -24,6 +24,13 @@
 		93D4E3AA16485D9800BF9EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D4E38216485D9700BF9EF3 /* Foundation.framework */; };
 		93D4E3B216485D9800BF9EF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D4E3B016485D9800BF9EF3 /* InfoPlist.strings */; };
 		93D4E3B516485D9800BF9EF3 /* ExampleSingleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3B416485D9800BF9EF3 /* ExampleSingleViewTests.m */; };
+		93D4E3C216485EE600BF9EF3 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3BF16485EE600BF9EF3 /* IIViewDeckController.m */; };
+		93D4E3C316485EE600BF9EF3 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3BF16485EE600BF9EF3 /* IIViewDeckController.m */; };
+		93D4E3C416485EE600BF9EF3 /* WrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3C116485EE600BF9EF3 /* WrapController.m */; };
+		93D4E3C516485EE600BF9EF3 /* WrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3C116485EE600BF9EF3 /* WrapController.m */; };
+		93D4E3C91648606700BF9EF3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D4E3C81648606700BF9EF3 /* QuartzCore.framework */; };
+		93D4E3D4164860AA00BF9EF3 /* DDGMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3D3164860AA00BF9EF3 /* DDGMacros.m */; };
+		93D4E3D5164860AA00BF9EF3 /* DDGMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D4E3D3164860AA00BF9EF3 /* DDGMacros.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		93D4E3B116485D9800BF9EF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93D4E3B316485D9800BF9EF3 /* ExampleSingleViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleSingleViewTests.h; sourceTree = "<group>"; };
 		93D4E3B416485D9800BF9EF3 /* ExampleSingleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleSingleViewTests.m; sourceTree = "<group>"; };
+		93D4E3BE16485EE600BF9EF3 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		93D4E3BF16485EE600BF9EF3 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		93D4E3C016485EE600BF9EF3 /* WrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapController.h; sourceTree = "<group>"; };
+		93D4E3C116485EE600BF9EF3 /* WrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapController.m; sourceTree = "<group>"; };
+		93D4E3C81648606700BF9EF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		93D4E3D2164860AA00BF9EF3 /* DDGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGMacros.h; sourceTree = "<group>"; };
+		93D4E3D3164860AA00BF9EF3 /* DDGMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGMacros.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D4E3C91648606700BF9EF3 /* QuartzCore.framework in Frameworks */,
 				93D4E38116485D9700BF9EF3 /* UIKit.framework in Frameworks */,
 				93D4E38316485D9700BF9EF3 /* Foundation.framework in Frameworks */,
 				93D4E38516485D9700BF9EF3 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +104,8 @@
 		93D4E37116485D9700BF9EF3 = {
 			isa = PBXGroup;
 			children = (
+				93D4E3C81648606700BF9EF3 /* QuartzCore.framework */,
+				93D4E3C716485EF300BF9EF3 /* vendor */,
 				93D4E38616485D9700BF9EF3 /* ExampleSingleView */,
 				93D4E3AD16485D9800BF9EF3 /* ExampleSingleViewTests */,
 				93D4E37F16485D9700BF9EF3 /* Frameworks */,
@@ -161,6 +178,43 @@
 				93D4E3B016485D9800BF9EF3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93D4E3C616485EEB00BF9EF3 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				93D4E3BE16485EE600BF9EF3 /* IIViewDeckController.h */,
+				93D4E3BF16485EE600BF9EF3 /* IIViewDeckController.m */,
+				93D4E3C016485EE600BF9EF3 /* WrapController.h */,
+				93D4E3C116485EE600BF9EF3 /* WrapController.m */,
+			);
+			name = ViewDeck;
+			sourceTree = "<group>";
+		};
+		93D4E3C716485EF300BF9EF3 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				93D4E3D7164860BE00BF9EF3 /* DDG */,
+				93D4E3C616485EEB00BF9EF3 /* ViewDeck */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		93D4E3D6164860B200BF9EF3 /* DDGMacros */ = {
+			isa = PBXGroup;
+			children = (
+				93D4E3D2164860AA00BF9EF3 /* DDGMacros.h */,
+				93D4E3D3164860AA00BF9EF3 /* DDGMacros.m */,
+			);
+			name = DDGMacros;
+			sourceTree = "<group>";
+		};
+		93D4E3D7164860BE00BF9EF3 /* DDG */ = {
+			isa = PBXGroup;
+			children = (
+				93D4E3D6164860B200BF9EF3 /* DDGMacros */,
+			);
+			name = DDG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +332,9 @@
 				93D4E38D16485D9700BF9EF3 /* main.m in Sources */,
 				93D4E39116485D9700BF9EF3 /* ESVAppDelegate.m in Sources */,
 				93D4E3A016485D9700BF9EF3 /* ESVViewController.m in Sources */,
+				93D4E3C216485EE600BF9EF3 /* IIViewDeckController.m in Sources */,
+				93D4E3C416485EE600BF9EF3 /* WrapController.m in Sources */,
+				93D4E3D4164860AA00BF9EF3 /* DDGMacros.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D4E3B516485D9800BF9EF3 /* ExampleSingleViewTests.m in Sources */,
+				93D4E3C316485EE600BF9EF3 /* IIViewDeckController.m in Sources */,
+				93D4E3C516485EE600BF9EF3 /* WrapController.m in Sources */,
+				93D4E3D5164860AA00BF9EF3 /* DDGMacros.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

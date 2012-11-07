@@ -7,6 +7,8 @@
 //
 
 #import "ESVViewController.h"
+#define CLASS_DEBUG 1
+#import "DDGMacros.h"
 
 @interface ESVViewController ()
 
@@ -16,8 +18,27 @@
 
 - (void)viewDidLoad
 {
+    DDGTrace();
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    NSString *storyboardName;
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        storyboardName = @"MainStoryboard_iPad";
+    } else {
+        storyboardName = @"MainStoryboard_iPhone";
+    }
+    storyboardName = @"MainStoryboard_iPhone";
+
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    self.leftController = [storyboard instantiateViewControllerWithIdentifier:@"leftViewController"];
+    self.centerController = [storyboard instantiateViewControllerWithIdentifier:@"centerViewController"];
+    self.rightController = [storyboard instantiateViewControllerWithIdentifier:@"rightViewController"];
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning

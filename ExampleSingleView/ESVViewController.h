@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IIViewDeckController.h"
 
-@interface ESVViewController : UIViewController
+@interface ESVViewController : IIViewDeckController;
 
 @end
