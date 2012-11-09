@@ -522,6 +522,7 @@
 				93D4E3BA16485D9800BF9EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93D4E3BB16485D9800BF9EF3 /* Build configuration list for PBXNativeTarget "ExampleSingleViewTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +531,7 @@
 				93D4E3BD16485D9800BF9EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
