@@ -192,7 +192,6 @@
 		93D4E37116485D9700BF9EF3 = {
 			isa = PBXGroup;
 			children = (
-				93D4E3C81648606700BF9EF3 /* QuartzCore.framework */,
 				93CC621F164D7B0C00EEDBF2 /* vendor */,
 				93D4E38616485D9700BF9EF3 /* ExampleSingleView */,
 				93D4E3AD16485D9800BF9EF3 /* ExampleSingleViewTests */,
@@ -213,6 +212,7 @@
 		93D4E37F16485D9700BF9EF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93D4E3C81648606700BF9EF3 /* QuartzCore.framework */,
 				93D4E38016485D9700BF9EF3 /* UIKit.framework */,
 				93D4E38216485D9700BF9EF3 /* Foundation.framework */,
 				93D4E38416485D9700BF9EF3 /* CoreGraphics.framework */,
